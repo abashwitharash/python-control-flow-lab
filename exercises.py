@@ -38,15 +38,18 @@
 # - Utilize the `in` operator to check for vowels.
 # - Ensure to provide feedback for non-alphabetical or invalid entries.
 
-# def check_letter():
-#     letter = input('please enter letter (a-z or A-Z): ').lower()
-#     if letter in "aeiou":
-#         print(f'the letter {letter} is a vowel')
-#     else:
-#         print(f'the letter {letter} is a consonant')
+def check_letter():
+    # Your control flow logic goes here
+    letter = input("Enter a letter: ").lower()
+    if not letter.isalpha():
+        print("Invalid entry. Please enter a letter from a-z or A-Z.")
+    elif letter in "aeiou":
+        print(f'The letter {letter} is a vowel')
+    else:
+        print(f'The letter {letter} is a consonant')
 
-# # Call the function
-# check_letter()
+# Call the function
+check_letter()
 
 
 # Exercise 2: Old enough to vote?
@@ -65,19 +68,19 @@
 # - Use `int()` to convert the input to an integer. Ensure to handle any conversion errors gracefully.
 # - Use a conditional statement to check if the age meets the minimum voting age requirement.
 
-# def check_voting_eligibility():
-#     voting = input('please enter your age: ')
-#     age = int(voting)
-#     if age >= 18:
-#         print('you are eligable to vote')
-#     elif age < 18:
-#         print('you cannot vote')
-#     else:
-#         print('age not entered or cannot be negative')
+def check_voting_eligibility():
+    voting = input('please enter your age: ')
+    age = int(voting)
+    if age >= 18:
+        print('you are eligable to vote')
+    elif age < 18:
+        print('you cannot vote')
+    else:
+        print('age not entered or cannot be negative')
 
 
-# # Call the function
-# check_voting_eligibility()
+# Call the function
+check_voting_eligibility()
 
 
 # Exercise 3: Calculate Dog Years
